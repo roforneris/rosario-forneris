@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.h1 {background-color: #86A697;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color:white;
+    padding: 35px;
+    font-size: 2rem;
+    direction: initial;
+    margin: 15px;
+    text-align: center;
+}
+body {
+    background-color:#BCE48B;
+}
+footer {
+    text-align: center;
+    background-color: #F7C343;
+    background-repeat:repeat;
+    font-size:medium;
+}
+/*Estilos parallax*/
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+}
+section {
+  background-size: cover;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-bg{
+  background-position: center center;
+  transform: translateZ(-0.5px) scale(2);
+  background-size: cover;
+  z-index: -1;
+  height: 30vh;
+}
+.parallax-content{
+  z-index: -1;
+  transform: translateY(-25vh) translateZ(0px) scale(1);
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+}
+.no-parallax-section{
+  height: 30vh;
+}
+.no-parallax-content{
+  text-align:center;
+  padding:30px;
+}
+/*Colores de fondo*/
+.bg-1{
+  background:rgb(16, 69, 37);
+}
+
+.centrarcapitilize {
+    font-style: italic;
+    font-size: large;
+    text-align:center;
+    color: #F7C343;
+    background-color: rgb(41, 50, 41);
+}
+
+.title{
+    text-align: left;
+    text-decoration: underline;
+    font-size: 4vh;
+    color: white;
+}
+.h2destinos{
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+}
+/*GRIDS */
+.menu {
+  background-color: beige;
+  opacity: .5;
+  list-style: none;
+  width: 90%;
+  margin:20px auto;
+  text-align:center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+
+}
+@media only screen and (max-width: 500px ) {
+  body {
+    background-color: aquamarine;
+  }
+  h1{
+    background-color: #F7C343;
+    font-size: 1.5rem;
+  }
+}
