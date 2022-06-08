@@ -9,19 +9,33 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <title>Voyager</title>
 </head>
-<body>
+<body class="body">
     <nav>
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="fotos.html"> Fotos</a></li>
-            <li><a href="Presets.html"> Preset</a></li>
-            <li><a href="nosotros.html"> Nosotros</a></li>
+        <ul class="nav nav-pills nav-fill menu p-2">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fotos.html">Fotos</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Presets.html">Preset</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
         </ul>
     </nav>
     <main>
-        <h1 class="title">
+        <h1 class="title text-center display-1">
             Nuestros Destinos
         </h1>
         <p class="centrarcapitilize">
@@ -31,25 +45,32 @@
             destinos, reserva de vuelos, qué hotel elegir y si es posible, algunos 
             consejos que nos eviten posibles sorpresas. Buscamos una experiencia que nos sirva de guía ante lo desconocido.
         </p>
-
-
-    <h2 class="h2destinos"> NEW YORK</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZyyEMrdwuWM" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </main>
-    <h2 class="h2destinos"> ATLANTA</h2>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2OrsVRfFY-w" 
-    title="YouTube video player" frameborder="0"
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-     gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <H2 class="h2destinos"> ORLANDO</H2>
-     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fG0lSiYtPgI" 
-     title="YouTube video player" frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+        <h2 class="h2destinos"> New York</h2>
+        <div class="ratio ratio-21x9">
+            <iframe
+            src="https://www.youtube.com/embed/ZyyEMrdwuWM" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe> title="NEW YORK" allowfullscreen ></iframe>
+        </div>
+        <h2 class="h2destinos"> Atlanta</h2>
+        <div class="ratio ratio-21x9">
+            <iframe
+            src="https://www.youtube-nocookie.com/embed/2OrsVRfFY-w" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> <iframe> title="Atlanta" allowfullscreen></iframe>
+        </div>
+        <h2 class="h2destinos"> Orlando</h2>
+        <div class="ratio ratio-21x9">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fG0lSiYtPgI" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe> title="Orlando" allowfullscreen></iframe>
+        </div>
 </body>
-<footer class="lead text-light">
+<footer class="lead text-light p-1">
     copyright © 2022
 </footer>
 </html>
