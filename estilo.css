@@ -1,0 +1,31 @@
+body {
+  background-color: #17d017;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1, footer h1 {
+  color: #1b30d0;
+  font-size: 4rem;
+}
+
+main .caja1 {
+  background-color: #1b30d0;
+  width: 420 px;
+}
+
+main .caja2 {
+  background-color: pink;
+  color: #17d017;
+  width: 420 px-100;
+}
+
+main .caja3 {
+  color: #1b30d0;
+  width: 420 px/3;
+}
+
+/*EXTEND*/
+footer {
+  font-size: medium;
+}
+/*# sourceMappingURL=estilo.css.map */

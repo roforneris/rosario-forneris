@@ -1,22 +1,49 @@
-body {
-    background-color: aliceblue;
-header{
-    .nav {
-        background-color: pink;
-        margin: 15px auto;
-        .menu{
-            list-style-type: none;
-            padding: 10px;4
-            display:flex;
-            flex-direction: row;
-            justify-content: center;
-            &.hover{
-                background-color: blue;
-                border-radius: 15px;
-            }
+$ancho:420 px;
+$blue:rgb(27, 48, 208);
+$green: rgb(23, 208, 23);
+$pink:pink;
 
-        }
+
+body{
+    background-color: $green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    h1{
+        color:$blue;
+        font-size: 4rem;
     }
 }
+main{
+    .caja1{
+        background-color:$blue;
+        width: $ancho;
+    }
+    .caja2{
+        background-color: pink;
+        color:$green;
+        width: $ancho - 100;
+    }
+    .caja3{
+        color:$blue;
+        width: $ancho/3;
+    }
+}
+/*EXTEND*/
+footer{
+    @extend header;
+    font-size: medium;
+}
+/*MAPS*/
 
+$redes: { /*Declaramos nuedes:valordecolor
+twitter: #55acee,
+facebook:  #3a5795,
+send-mail: #C25E30
+}; 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $nameredes, $valordecolor in $redes {
+.btn--#{$nameredes} {
+background-color: $pink;
+}
 }
