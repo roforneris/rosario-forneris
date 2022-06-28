@@ -8,10 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="./fotos/favicon-32x32.png">
-    <link rel="stylesheet" href="voyager.css">
-     <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/npm run watch-css">
+    <!-- JavaScript Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Awesome Fonts -->
+     <script src="https://kit.fontawesome.com/ff97d51aff.js" crossorigin="anonymous"></script>
     <title>Voyager</title>
 </head>
 <body>
@@ -36,23 +39,36 @@
     </nav>
     <main>
    <!-- Background image -->
-    <div class="bg-image d-flex justify-content-center align-items-center" style="
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp');
-    height: 100vh;">
-    <h1 class="text-white">Voyage</h1>
-    </div>
-    <!-- Background image -->
-    <p class="centrarcapitilize">
-        Nómada digital, creador de contenido o aficionado, 
-        aquí encontrarás herramientas, consejos y experiencias para gente como tú, 
-        con pasión por el vídeo y la fotografía de viajes.
-    </p>
+        <div class="bg-image d-flex justify-content-center align-items-center" style="
+        background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp');
+         height: 100vh;">
+        <h1 class="text-white">Voyage</h1>
+        </div>
+        <section>
+            <p class=" text-center text-white fs-3">
+                Nómada digital, creador de contenido o aficionado, 
+                aquí encontrarás herramientas, consejos y experiencias para gente como tú, 
+                con pasión por el vídeo y la fotografía de viajes.
+            </p>
+        </section>
     </main>
-    <footer class="lead text-light">
-        <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        copyright © 2022
+
+    <footer>
+        <section>
+                <!-- Facebook -->
+            <a style="color: $facebook;" href="https://facebook.com" role="button">
+            <i class="fab fa-facebook-f fa-lg"></i></a>
+            <!-- Twitter -->
+            <a style="color: $twitter;" href="https://twitter.com/roforneris" role="button">
+            <i class="fab fa-twitter fa-lg"></i></a>
+            <!-- Google -->
+            <a style="color: #dd4b39;" href="https://gmail.com" role="button">
+            <i class="fab fa-google fa-lg"></i></a>
+            <!-- Instagram -->
+            <a style="color: $instagram;" href="https://instagram.com/amocba" role="button">
+                <i class="fab fa-instagram fa-lg"></i></a>
+        </section>
+        <p class="lead text-light p-1 footer"> copyright © 2022 </p>
     </footer> 
 </body>
 </html>
